@@ -11,7 +11,7 @@ SELECT COUNT(departments.dept_no) FROM departments;
 
 REPORT 2
 
-SELECT COUNT(first_name)
+SELECT COUNT(employees.emp_no)
 FROM employees 
 WHERE first_name = "Mark";
 
@@ -31,7 +31,11 @@ REPORT 4
 
 SELECT COUNT(employees.emp_no)
 FROM employees
-WHERE DATE(employees.hire_date) >= "1985-01-01";
+WHERE YEAR(employees.hire_date) >= "1985"
+UNION
+SELECT(employees.first_name)
+FROM employees
+WHERE YEAR(employees.hire_date) >= "1985";
 
 /////////////////////////////////////////////////////////////////
 
