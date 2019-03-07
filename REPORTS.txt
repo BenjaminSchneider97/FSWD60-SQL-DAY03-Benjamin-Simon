@@ -42,7 +42,13 @@ WHERE YEAR(employees.hire_date) >= "1985";
 
 REPORT 5
 
-
+SELECT COUNT(employees.emp_no)
+FROM employees
+WHERE YEAR(employees.hire_date) >= "1990" AND YEAR(employees.hire_date) <= "1997"
+UNION
+SELECT(employees.first_name)
+FROM employees
+WHERE YEAR(employees.hire_date) >= "1990" AND YEAR(employees.hire_date) <= "1997";
 
 /////////////////////////////////////////////////////////////////
 
