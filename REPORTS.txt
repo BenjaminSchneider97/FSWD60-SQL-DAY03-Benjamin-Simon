@@ -1,0 +1,12 @@
+REPORT 1
+
+SELECT COUNT(titles.emp_no) FROM titles;
+SELECT COUNT(dept_emp.emp_no) FROM dept_emp;
+SELECT COUNT(dept_manager.emp_no) FROM dept_manager;
+SELECT COUNT(salaries.emp_no) FROM salaries;
+SELECT COUNT(departments.dept_no) FROM departments;
+
+/////////////////////////////////////////////////////////////////
+
+REPORT 2
+
