@@ -20,7 +20,9 @@ WHERE first_name = "Mark";
 
 REPORT 3
 
-
+SELECT COUNT(employees.emp_no) 
+FROM employees 
+WHERE (first_name = "Eric" AND last_name LIKE 'A%');
 
 /////////////////////////////////////////////////////////////////
 
