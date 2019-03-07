@@ -62,6 +62,11 @@ WHERE employees.emp_no IN (SELECT salaries.emp_no
                   FROM salaries
                   WHERE salaries.salary > 70000);
 
+SELECT COUNT(employees.emp_no)
+FROM employees
+INNER JOIN salaries ON employees.emp_no = salaries.emp_no
+WHERE (salaries.salary) > 70000;
+
 /////////////////////////////////////////////////////////////////
 
 
