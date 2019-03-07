@@ -29,7 +29,9 @@ WHERE (first_name = "Eric" AND last_name LIKE 'A%');
 
 REPORT 4
 
-
+SELECT COUNT(employees.emp_no)
+FROM employees
+WHERE DATE(employees.hire_date) >= "1985-01-01";
 
 /////////////////////////////////////////////////////////////////
 
